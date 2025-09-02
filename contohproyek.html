@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Settings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Left Column: Account Management -->
+    <div class="md:col-span-1">
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-lg font-semibold mb-1">Account Management</h2>
+        <p class="text-sm text-gray-500 mb-4">Profile photo & password</p>
+
+        <div class="flex flex-col items-center">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQF3LocnHkToXw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729325845355?e=2147483647&v=beta&t=hQbA_ap1D8pol36Aqf6T4eUyOyGuKULuLuRKzUXMTEw" alt="avatar" />
+          <button class="mt-3 bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg text-sm">Upload Photo</button>
+        </div>
+
+        <hr class="my-6" />
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm mb-1">Old Password</label>
+            <input type="password" class="w-full border rounded-lg px-3 py-2" placeholder="••••••••" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">New Password</label>
+            <input type="password" class="w-full border rounded-lg px-3 py-2" placeholder="••••••••" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Confirm New Password</label>
+            <input type="password" class="w-full border rounded-lg px-3 py-2" placeholder="••••••••" />
+          </div>
+          <button type="submit" class="w-full bg-[#c7a07a] hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Change Password</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Column: Profile Info -->
+    <div class="md:col-span-2 space-y-6">
+      <div class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-lg font-semibold mb-1">Profile Information</h2>
+        <p class="text-sm text-gray-500 mb-4">Basic details for your account</p>
+
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm mb-1">Username</label>
+              <input type="text" value="gene.rodriq" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">First Name</label>
+              <input type="text" value="Gene" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Nickname</label>
+              <input type="text" value="Gene_r" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Role</label>
+              <select class="w-full border rounded-lg px-3 py-2">
+                <option>Subscriber</option>
+                <option>Author</option>
+                <option>Editor</option>
+                <option>Admin</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Last Name</label>
+              <input type="text" value="Rodriguez" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Display Name Publicly as</label>
+              <input type="text" value="Gene" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 class="text-base font-semibold">Contact Info</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm mb-1">Email (required)</label>
+              <input type="email" value="gene.rodr@gmail.com" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">WhatsApp</label>
+              <input type="text" value="@gene-rod" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Website</label>
+              <input type="text" value="gene-roding.webflow.io" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Telegram</label>
+              <input type="text" value="@gene-rod" class="w-full border rounded-lg px-3 py-2" />
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 class="text-base font-semibold">About the User</h3>
+          <label class="block text-sm mb-1">Biographical Info</label>
+          <textarea class="w-full border rounded-lg px-3 py-2 min-h-[120px]">
+Albert Einstein was a German mathematician and physicist who developed the special and general theories of relativity. In 1921, he won the Nobel Prize for physics for his explanation of the photoelectric effect. In the following decades...
+          </textarea>
+
+          <div class="flex justify-end">
+            <button type="submit" class="bg-[#c7a07a] hover:bg-amber-400 text-white px-4 py-2 rounded-lg">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
