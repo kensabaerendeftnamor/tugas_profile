@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Account Management</title>
+</head>
+<body>
+  <table border="1" cellpadding="8" cellspacing="0" width="130">
+    <tr>
+      <td width="250" valign="top">
+        <table width="100%" cellpadding="6" cellspacing="0" border="0">
+          <tr>
+            <tr>
+            <td align="center"><strong>Profile Information</strong></td>
+          </tr>
+            <td align="center">
+               <img src="https://media.licdn.com/dms/image/v2/D5603AQF3LocnHkToXw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729325845355?e=2147483647&v=beta&t=hQbA_ap1D8pol36Aqf6T4eUyOyGuKULuLuRKzUXMTEw" alt="Foto Profil" width="200" height="200">
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <input type="file" name="profile_photo">
+            </td>
+          </tr>
+
+          <tr><td><hr></td></tr>
+
+          <tr>
+            <td align="left"><strong>Old Password</strong></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="old_password" size="30">
+            </td>
+          </tr>
+
+          <tr>
+            <td align="left"><strong>New Password</strong></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="new_password" size="30">
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <br>
+              <input type="submit" value="Change Password">
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <!-- Kolom kanan -->
+      <td valign="top">
+        <table width="100%" cellpadding="6" cellspacing="0" border="0">
+          <tr>
+            <td colspan="4"><strong>Profile Information</strong></td>
+          </tr>
+
+          <tr>
+            <td width="20%">Username</td>
+            <td width="30%"><input type="text" value="kensab" size="25"></td>
+            <td width="20%">First Name</td>
+            <td width="30%"><input type="text" value="kensa" size="25"></td>
+          </tr>
+
+          <tr>
+            <td>Nickname</td>
+            <td><input type="text" value="Kensa_k" size="25"></td>
+            <td>Role</td>
+            <td>
+              <select>
+                <option>Subscriber</option>
+                <option>Administrator</option>
+                <option>Editor</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Last Name</td>
+            <td><input type="text" value="Baeren" size="25"></td>
+            <td>Display Name Publicly as</td>
+            <td><input type="text" value="Kensa" size="25"></td>
+          </tr>
+
+          <tr><td colspan="4"><hr></td></tr>
+
+          <tr>
+            <td colspan="4"><strong>Contact Info</strong></td>
+          </tr>
+
+          <tr>
+            <td>Email (required)</td>
+            <td><input type="email" value="kensa@gmail.com" size="25"></td>
+            <td>WhatsApp</td>
+            <td><input type="text" value="@kensa_k" size="25"></td>
+          </tr>
+
+          <tr>
+            <td>Website</td>
+            <td><input type="text" value="kensa.webflow.io" size="25"></td>
+            <td>Telegram</td>
+            <td><input type="text" value="@kensa" size="25"></td>
+          </tr>
+
+          <tr><td colspan="4"><hr></td></tr>
+
+          <tr>
+            <td colspan="4"><strong>About the User</strong></td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <div><label>Biographical Info</label></div>
+              <div>
+                <textarea rows="6" cols="80">
+Albert Einstein was a German mathematician and physicist who developed the special and general theories of relativity. In 1921, he won the Nobel Prize for physics for his explanation of the photoelectric effect. In the following decade...
+                </textarea>
+              </div>
+            </td>
+          </tr>
+            </td>
+          </tr>
+
+          <tr><td colspan="4" align="right">
+            <input type="submit" value="Update Profile">
+          </td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
